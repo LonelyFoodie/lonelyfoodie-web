@@ -44,5 +44,4 @@ const StyledItem = styled('li')({
 	alignItems: 'center',
 	marginBottom: '25px',
 });
-
 export default Review;

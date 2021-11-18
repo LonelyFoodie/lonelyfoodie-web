@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Button from '@components/button';
 import { Place } from '@library/map/types';
 import TabPanel from '@components/tabPanel';
 import Item from '@components/information/item';
