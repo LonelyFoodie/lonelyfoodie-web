@@ -24,7 +24,7 @@ const Information = ({ restaurant, onGoBackClick }: InformationProps) => {
 		setValue(newValue);
 	};
 
-	const writeURL = '';
+	const writeURL = '/review/edit';
 
 	return (
 		<Wrapper>
