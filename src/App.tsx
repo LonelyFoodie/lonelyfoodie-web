@@ -11,15 +11,17 @@ declare global {
 
 const Home = lazy(() => import('@routes/Home'));
 const Login = lazy(() => import('@routes/Login'));
+const Edit = lazy(() => import('@routes/Review/Edit'));
 
 const App = (): JSX.Element => (
 	<Router>
 		{/* <Link to="/">메인</Link>
-		<Link to="/login">로그인</Link> */}
+      <Link to="/login">로그인</Link> */}
 		<Switch>
 			<Suspense fallback={<div>loading...</div>}>
 				<Route path="/" exact component={Home} />
 				<Route path="/login" component={Login} />
+				<Route path="/Review/Edit" component={Edit} />
 			</Suspense>
 		</Switch>
 	</Router>
