@@ -24,6 +24,8 @@ const Home = lazy(() => import('@routes/Home'));
 const Login = lazy(() => import('@routes/Login'));
 const MyPage = lazy(() => import('@routes/MyPage'));
 const Signup = lazy(() => import('@routes/Signup'));
+const ReviewEdit = lazy(() => import('@routes/Edit'));
+const MyPageEdit = lazy(() => import('@routes/MyPageEdit'));
 
 const App = (): JSX.Element => (
 	<Router>
@@ -42,7 +44,11 @@ const App = (): JSX.Element => (
 					<Route path="/login" component={Login} />
 					<Route path="/signup" component={Signup} />
 					<Route path="/mypage" component={MyPage} />
+					<Route path="/review/edit" component={ReviewEdit} />
+					<Route path="/mypage/edit" component={MyPageEdit} />
+					{/*
 					<Redirect path="*" to="/" />
+					*/}
 				</Suspense>
 			</Switch>
 		</Wrapper>
